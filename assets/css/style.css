@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+header {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: rgb(121, 202, 235);
+}
+
+header h1 {
+    display: inline;
+    color: rgb(170, 104, 196);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url('../images/light.jpeg');
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: rgb(93, 179, 213);
+    position: relative;
+    padding: 315px 0px 0px 1000px;
+}
