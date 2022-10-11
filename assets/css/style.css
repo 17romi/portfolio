@@ -12,12 +12,15 @@ body {
 header {
     padding: 20px 30px;
     font-size: 20px;
+    height: 70px;
     background-color: rgb(121, 202, 235);
 }
 
 header h1 {
     display: inline;
     color: rgb(170, 104, 196);
+
+
 }
 
 header a {
@@ -40,16 +43,68 @@ header nav ul li a {
 }
 
 .hero {
+    display: flex;
+    justify-content: flex-end;
     background-image: url('../images/light.jpeg');
-    height: 350px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .hero h2 {
-    font-size: 24px;
+    display: flex;
+    margin-right: 55px;
+    margin-top: 180px;
+    font-size: 30px;
     color: rgb(93, 179, 213);
     position: relative;
-    padding: 315px 0px 0px 1000px;
+}
+
+/* .content {
+    display: flex;
+    justify-content: flex-start;
+    height: 300px;
+    background-size: cover;
+    font-size: 35px;
+    color: rgb(170, 104, 196);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.content p {
+    font-size: 20px;
+    color: ;
+    margin-top: 30px;
+    color: rgb(93, 179, 213);
+    padding: 15px;
+} */
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.content-container {
+    flex:1;
+    background: linear-gradient(90deg, rgba(2,0,36,.2) 0%, rgba(9,67,121,.2) 36%, rgba(0,212,255,.2) 100%);
+    align-items: flex-end;
+    padding: 10px;
+    text-align: center;
+    border: solid 5px #076a9d;
+    color:#455c82;
+    margin: 35px;
+    justify-content: space-around;
+}
+
+.content-header {
+    font-size: 33px;
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 220px;
+    margin-right: 220px;
 }
