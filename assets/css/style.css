@@ -42,14 +42,28 @@ header nav ul li a {
     font-size: 20px;
 }
 
+
 .hero {
     display: flex;
     justify-content: flex-end;
-    background-image: url('../images/light.jpeg');
+    /* background-image: url('../images/light.jpeg'); */
+    background-image: linear-gradient(90deg, rgba(171, 107, 214, 0.817) 0%, rgba(167, 86, 204, 0.761) 36%,  rgba(26, 147, 222, 0.932) 60%, rgba(63, 174, 226, 0.95) 100%);
+    background-size: 100%;
+    animation: hero-animation 3s infinite alternate;
     height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+
+@keyframes hero-animation {
+    0%{background-position: left;}
+
+    50%{background-position: center;}
+
+    100%{background-position: right;}
+
 }
 
 .hero h2 {
@@ -57,7 +71,7 @@ header nav ul li a {
     margin-right: 55px;
     margin-top: 180px;
     font-size: 30px;
-    color: rgb(93, 179, 213);
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -100,11 +114,12 @@ header nav ul li a {
 
 .content-header {
     font-size: 33px;
-    background-color: white;
+    background-color: white, .5;
     margin: 15px;
     padding: 5px;
     justify-content: center;
     text-align: center;
     margin-left: 220px;
     margin-right: 220px;
+    border: solid red 5px;
 }
